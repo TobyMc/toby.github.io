@@ -680,6 +680,8 @@ body {
 
 
 /* index css */
+
+
 .body.home{
   grid-column-gap: 56px;
   grid-row-gap: 56px;
@@ -705,6 +707,31 @@ body {
   display: block;
 }
 
+.w-nav-button {
+  float: right;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 18px;
+  font-size: 24px;
+  display: none;
+  position: relative;
+  }
+
+@media screen and (max-width: 991px){
+  .w-nav[data-collapse="medium"] .w-nav-button {
+  display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-button, .nav-button.w--open {
+  background-color: var(--white-smoke);
+  }
+}
 
 .w-nav:before, .w-nav:after {
   content: " ";
@@ -735,10 +762,33 @@ body {
   position: relative;
 }
 
-.w-nav-brand:hover{
+.w-nav-brand:hover {
   text-decoration: none;
   text-decoration-line: none;
 }
+
+.w-icon-nav-menu:before {
+  content: "⚛";
+  font-size: larger;
+}
+
+@media screen and (max-width: 991px) {
+  .icon-menu {
+  color: var(--dark-slate-grey);
+  }
+}
+
+[class^="w-icon-"], [class*=" w-icon-"] {
+  speak: none;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: webflow-icons !important;
+ }
 
 .text-base {
   width: auto;
@@ -759,11 +809,23 @@ body {
   position: relative;
 }
 
+@media screen and (min-width: 1280px) {
+  .text-xs {
+    text-align: left;
+    width: auto;
+    display: inline-block;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .text-xs {
+  width: 688px;
+  padding-left: 0;
+  }
+}
+
 .text-xs {
-  text-align: left;
-  width: auto;
-  display: inline-block;
-  overflow: visible;
   color: var(--dark-slate-grey);
   padding-top: 20px;
   font-family: Source Sans Pro, sans-serif;
@@ -795,7 +857,20 @@ body {
   left: 0;
   right: 0;
   overflow: hidden;
+}
+
+@media screen and (max-width: 991px){
+  .w-nav[data-collapse="medium"] .w-nav-menu {
+  display: none;
   }
+}
+
+@media screen and (max-width: 991px){
+  .nav-links {
+  border-bottom: 1px solid var(--light-grey);
+  background-color: var(--white-smoke);
+  }
+}
 
 /* big text box css */
 
