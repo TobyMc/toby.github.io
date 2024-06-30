@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Toby’s Site</title>
+  <title>Portfolio | Toby’s Site</title>
   <meta name="generator" content="Jekyll v4.3.3" />
   <meta property="og:title" content="About" />
   <meta name="author" content="Toby McConville" />
@@ -39,7 +39,7 @@
         <a href="mailto:toby.mcconville4@gmail.com" class="text-xs clipboard-copy w-nav-link" style="max-width: 940px;">Email</a>
       </nav>
       
-      <div class="nav-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+      <div id="nav-button" class="nav-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
         <div class="icon-menu w-icon-nav-menu">
         </div>
       </div>
@@ -76,6 +76,14 @@
         });
     });
     </script>
+
+  <script>
+  document.getElementById("nav-button").addEventListener("click", function() {
+      var isExpanded = this.getAttribute("aria-expanded") === "true";
+      this.setAttribute("aria-expanded", !isExpanded);
+  });
+    </script>
+  
     
 </body>
 
