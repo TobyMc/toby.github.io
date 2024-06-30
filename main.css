@@ -987,14 +987,15 @@ address, article, aside, div, footer, header, hgroup, main, nav, search, section
   }
 
 #content {
-  width: 720px;
+  width: 90%;
+  max-width: 720px;
   text-align: left;
   margin: 0 auto;
   }
 
 h1 {
   margin-bottom: 2em;
-  width: 720px;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
@@ -1037,8 +1038,11 @@ h2 {
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; 
   }
 
+
+
 #posts {
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   text-align: left;
   margin: 0 auto;
   font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; 
