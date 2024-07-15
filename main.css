@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
 /**
  * Reset some basic elements
  */
@@ -12,18 +18,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(240, 243, 245);
   color: #333;
-  background-color:rgb(240, 243, 245);
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -707,6 +706,7 @@ body {
   padding-left: 0;
 }
 
+/*
 .navbar {
   background-color: var(--white-smoke);
   width: 800px;
@@ -714,7 +714,9 @@ body {
   margin-right: auto;
   display: block;
 }
+*/
 
+/*
 .w-nav-button {
   float: right;
   cursor: pointer;
@@ -728,7 +730,10 @@ body {
   display: none;
   position: relative;
   }
+  */
 
+
+/*
 @media screen and (max-width: 991px){
   .w-nav[data-collapse="medium"] .w-nav-button {
   display: block;
@@ -802,6 +807,7 @@ body {
   }
 }
 
+
 [class^="w-icon-"], [class*=" w-icon-"] {
   speak: none;
   font-variant: normal;
@@ -813,6 +819,8 @@ body {
   line-height: 1;
   font-family: webflow-icons !important;
  }
+
+*/
 
 .text-base {
   width: auto;
@@ -852,10 +860,12 @@ body {
   font-weight: 400;
 }
 
+/*
 .w-nav-menu {
   float: right;
   position: relative;
 }
+
 
 @media screen and (min-width: 1280px) {
   .text-xs {
@@ -937,6 +947,140 @@ body {
 @media screen and (max-width: 991px){
   .nav-button, .nav-button.w--open {
   background-color: var(--white-smoke);
+  }
+}
+
+@media screen and (max-width: 767px){
+  .nav-button {
+  background-color: var(--white-smoke);
+  }
+}
+*/
+
+/*new nav*/
+
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-brand {
+  float: left;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  z-index: 99;
+  font-family: serif;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  gap: 60px;
+  padding-left: 10px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: slategray;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  float: right;
+  display: none;
+  cursor: pointer;
+  z-index: 98;
+  align-items: right;
+}
+
+.bar {
+  display: block;
+  width: 12px;
+  height: 2px;
+  margin: 2px auto;
+  background-color: black; /* Ensure visibility */
+  transition: all 0.5s ease-in-out;
+}
+
+@media(max-width: 768px) {
+  .navbar{
+    flex-flow: column;
+    width: 440px;
+    min-width: auto;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hamburger {
+    display: block;
+    float: right;
+    align-items: right;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(4px) rotate(405deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-405deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    flex-direction: column;
+    background-color: rgba(240, 243, 245, 0.98);
+    min-width: 200px;
+    width:100%;
+    text-align: left;
+    transition: top 0.3s ease-in-out;
+    margin: 0;
+    z-index: 95;
+    gap: 2px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
+
+  .nav-menu.active {
+    top: 70px;
+  }
+
+  .nav-item {
+    margin: 2px 0;
+    padding-top: 20px;
+    color: darkslategray;
+
   }
 }
 
@@ -1041,7 +1185,7 @@ body {
 }
 
 .container {
-  z-index: 99;
+  z-index: 2;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   flex-flow: row;
