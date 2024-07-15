@@ -1082,18 +1082,33 @@ a{
 
 @media screen and (max-width: 479px) {
   .navbar{
-    width: 100%;
+    width: 180px;
     margin-top: 0;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    margin-left: none;
+    margin-right: none;
+    padding: 5%;
   }
 
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    flex-direction: column;
+    background-color: rgba(240, 243, 245, 0.98);
+    min-width:none;
+    width: 180px;
+    text-align: left;
+    transition: top 0.3s ease-in-out;
+    margin: 0;
+    z-index: 95;
+    gap: 2px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
 
   .container {
     flex-flow: column;
-    width: 100%;
+    width: 180px;
     min-width: auto;
     margin-top: 0;
     padding-left: 20px;
