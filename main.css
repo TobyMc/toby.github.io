@@ -969,23 +969,19 @@ a{
 }
 
 .navbar {
-  
   min-height: 70px;
   display: flex;
   justify-content: space-between;
-  align-items: left;
   padding: 0 24px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .nav-brand {
-  float: left;
   padding-top: 24px;
   padding-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
-  padding-left: 10px;
   z-index: 99;
   font-family: serif;
 }
@@ -1010,7 +1006,6 @@ a{
 
 /* Hamburger Menu */
 .hamburger {
-  float: right;
   display: none;
   cursor: pointer;
   z-index: 98;
@@ -1028,20 +1023,17 @@ a{
 
 @media(max-width: 768px) {
   .navbar{
-    flex-flow: column;
     width: 440px;
-    min-width: auto;
     margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
   .hamburger {
     display: block;
-    float: right;
-    align-items: right;
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -1062,7 +1054,7 @@ a{
     flex-direction: column;
     background-color: rgba(240, 243, 245, 0.98);
     min-width: 200px;
-    width:100%;
+    width: 440px;
     text-align: left;
     transition: top 0.3s ease-in-out;
     margin: 0;
@@ -1077,10 +1069,13 @@ a{
   }
 
   .nav-item {
-    margin: 2px 0;
     padding-top: 20px;
     color: darkslategray;
 
+  }
+
+  .nav-brand{
+    position:inherit;
   }
 }
 
