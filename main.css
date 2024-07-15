@@ -1115,6 +1115,10 @@ a{
     display: flex;
     }
 
+    .h3{
+      width: 400px;
+    }
+
 }
 
 /* big text box css */
