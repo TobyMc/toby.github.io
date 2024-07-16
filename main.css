@@ -1303,7 +1303,7 @@ a{
     justify-content: space-between;
   }
   .row{
-    width: 100%;
+    width: 300px;
     margin-left: 5%;
     margin-right: 5%;
   }
