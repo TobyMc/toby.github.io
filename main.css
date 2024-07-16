@@ -1125,12 +1125,15 @@ a{
       width: 300px;
       font-size: 24px;
       font-weight: 400;
+      display: flex;
     }
 
     .row{
       width: 300px;
       margin-left: 5%;
       margin-right: 5%;
+      display: flex;
+      flex-direction: column;
     }
 }
 
@@ -1306,10 +1309,22 @@ a{
     width: 300px;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    flex-direction: column;
   }
 
 }
 
+
+@media screen and (max-width: 440px){
+  .h3{
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .row {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
