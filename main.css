@@ -1113,8 +1113,7 @@ a{
 
   .container {
     flex-direction: column;
-    width: 100%;
-    max-width: 100%;
+    width: 360px;
     margin: 20px auto;
     padding: 0 10px;
     display: flex;
@@ -1122,10 +1121,9 @@ a{
     }
 
     .h3{
-      width: 100%;
+      width: 80%;
       font-size: 24px;
       font-weight: 400;
-      padding: 0 10px;
     }
 
     .row{
