@@ -1078,9 +1078,13 @@ a{
   .nav-brand{
     position:inherit;
   }
+
+  .row{
+    width: 440px;
+  }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .navbar{
     width: 400px;
     margin-top: 0;
@@ -1107,18 +1111,25 @@ a{
   }
 
   .container {
-    flex-flow: column;
+    flex-direction: column;
     width: 400px;
-    margin-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 10px;
     display: flex;
+    align-items: center;
     }
 
     .h3{
       width: 400px;
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 10px;
     }
 
+    .row{
+      width: 400px;
+    }
 }
 
 /* big text box css */
