@@ -1085,14 +1085,13 @@ a{
   }
 }
 
-@media screen and (max-width: 480px) {
-  .navbar{
-    width: 400px;
+@media screen and (max-width: 479px) {
+  .navbar {
+    width: 100%;
     margin-top: 0;
     display: flex;
-    margin-left: none;
-    margin-right: none;
-    padding: 5%;
+    justify-content: space-between;
+    padding: 10px 20px;
   }
 
   .nav-menu {
@@ -1100,8 +1099,7 @@ a{
     top: -100%;
     flex-direction: column;
     background-color: rgba(240, 243, 245, 0.98);
-    min-width:none;
-    width: 400px;
+    width: 100%;
     text-align: left;
     transition: top 0.3s ease-in-out;
     margin: 0;
@@ -1112,29 +1110,55 @@ a{
   }
 
   .container {
-    flex-direction: column;
-    width: 300px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 20px auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    }
+  }
 
-    .h3{
-      width: 300px;
-      font-size: 24px;
-      font-weight: 400;
-      display: flex;
-    }
+  .h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 10px;
+  }
 
-    .row{
-      width: 300px;
-      margin-left: 5%;
-      margin-right: 5%;
-      display: flex;
-      flex-direction: column;
-    }
+  .name-gradient {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  .nav-menu.active {
+    top: 70px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    padding-top: 10px;
+    color: darkslategray;
+  }
+
+  .nav-brand {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .text-base {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* big text box css */
@@ -1299,29 +1323,6 @@ a{
   }
 }
 
-
-@media screen and (max-width: 440px){
-  .row.auto{
-    flex-flow: row;
-    justify-content: space-between;
-  }
-  .row{
-    width: 300px;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-  }
-
-}
-
-
-@media screen and (max-width: 440px){
-  .h3{
-    width: 300px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
 .row {
   grid-column-gap: 40px;
   grid-row-gap: 40px;
