@@ -1113,22 +1113,24 @@ a{
 
   .container {
     flex-direction: column;
-    width: 400px;
-    padding: 5%;
+    width: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: 20px auto;
     display: flex;
     align-items: center;
     }
 
     .h3{
-      width: 400px;
+      width: 300px;
       font-size: 24px;
       font-weight: 400;
     }
 
     .row{
-      width: 400px;
-      padding: 5%;
+      width: 300px;
+      margin-left: 5%;
+      margin-right: 5%;
     }
 }
 
