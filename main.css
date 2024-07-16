@@ -1118,10 +1118,9 @@ a{
   }
 
   .h3 {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 18px;
-    padding: 0 10px;
   }
 
   .name-gradient {
@@ -1159,10 +1158,6 @@ a{
     text-align: center;
   }
 
-  .h3.link{
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 /* big text box css */
