@@ -1113,21 +1113,22 @@ a{
 
   .container {
     flex-direction: column;
-    width: 360px;
+    width: 400px;
+    padding: 5%;
     margin: 20px auto;
-    padding: 0 10px;
     display: flex;
     align-items: center;
     }
 
     .h3{
-      width: 80%;
+      width: 400px;
       font-size: 24px;
       font-weight: 400;
     }
 
     .row{
       width: 400px;
+      padding: 5%;
     }
 }
 
